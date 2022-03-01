@@ -1,0 +1,205 @@
+body p{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+h1 a:hover{
+text-decoration: none;
+color: rgba(22,30,46,1);
+}
+
+.font-extrabold{
+font-weight: 800;
+}
+.tracking-tight{
+letter-spacing: -.025em;
+}
+
+.text-gray-900 {
+  /* font-weight: 900; */
+  color: rgba(22,30,46,1);
+}
+
+.text-gray-500 {
+  color: #6b7280;
+  color: rgba(107,114,128,1);
+}
+
+.leading-7 {
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.h1 h1{
+font-size: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.list-horizontal {
+  list-style: default;
+  padding: 0;
+}
+
+.list-horizontal li {
+  display: inline-block;
+}
+
+
+.list-horizontal li::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 4px;
+  margin: 0px 8px;
+  border-radius: 50%;
+  background-color: rgb(108, 114, 124);
+}
+
+.list-horizontal li:last-child::after{
+display: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.gap-12 {
+  grid-gap: 3rem;
+  gap: 3rem;
+}
+
+.border-t-2 {
+  border-top: 2px solid;
+}
+
+.border-gray-100 {
+  border-color: rgba(244,245,247,1);
+}
+
+.relative {
+  position: relative;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-teal-600 {
+  color: rgba(111,78,55,1);
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.link-text{
+text-decoration: none;
+}
+
+.link-color-coffee{
+color: rgba(111,78,55,1);
+}
+.link-color-coffee:hover{
+color: rgba(111,78,55,1);
+}
+.link-text:hover{
+text-decoration: none;
+}
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.prose {
+  color: #4b5563;
+  max-width: 65ch;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose strong {
+  color: #1a202c;
+  font-weight: 600;
+}
+
+.prose ul {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  list-style: none;
+}
+
+.prose li {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.prose ul > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.prose {
+  color: #4b5563;
+}
+
+.prose ul li::before {
+  background-color: #9fa6b2;
+}
+
+.prose ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: #cbd5e0;
+  border-radius: 50%;
+  width: .375em;
+  height: .375em;
+  top: .6875em;
+  left: .25em;
+}
+
+.prose > ul > li > :last-child {
+  margin-bottom: 1.25em;
+}
+
+.prose > ul > li > :first-child {
+  margin-top: 1.25em;
+}
+
+.prose li a {
+  color: #161e2e;
+  text-decoration: underline;
+}
