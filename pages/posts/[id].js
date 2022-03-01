@@ -10,7 +10,7 @@ export default function Post({postData}){
             <title>{postData.title} - Education of IT</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <meta charset="utf-8"/>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
             <meta name="keywords" content="online course, kopi koding, kursus programming, bikin web, belajar programming, cerita developer"/>
             <meta name="description" content={postData.description} />
             <meta property="og:title" content={`${postData.title} - Education of IT`} />
@@ -45,7 +45,7 @@ export default function Post({postData}){
                   </li>
                   <li>
                     <span>
-                      <a href="https://www.youtube.com/channel/UCy-rQYzAcIyrEw0Gpck31rA" target='_blank' className="link-color-coffee">Youtube</a>
+                      <a href="https://www.youtube.com/channel/UCy-rQYzAcIyrEw0Gpck31rA" className="link-color-coffee">Youtube</a>
                     </span>
                   </li>
                 </ul>
@@ -103,9 +103,7 @@ export default function Post({postData}){
             </div>
             <footer className={styles.footer}>
         <Link
-          href="/"
-          rel="noopener noreferrer"
-        >
+          href="/" passHref>
           <div>
             Powered by Antonius
             <div className='text-center'>

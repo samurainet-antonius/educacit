@@ -10,7 +10,7 @@ export default function Home({ externalPostData }) {
         <title>Educacit - Education of IT</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet='utf-8'/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta httpEquiv='X-UA-Compatible' content="IE=edge"/>
         <meta name="keywords" content="online course, kopi koding, kursus programming, bikin web, belajar programming, cerita developer"/>
         <meta name="description" content="Belajar ngoding sambil ngopi" />
         <meta property="og:title" content="Belajar ngoding sambil ngopi - Educacit" />
@@ -19,7 +19,7 @@ export default function Home({ externalPostData }) {
         <meta property="og:type" content="website"></meta>
         <link rel="icon" type="image/x-icon" href="/img/logo/favicon.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto&display=swap" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto&display=swap" rel="preconnect"/>
       </Head>
 
       <div className='container pt-5'>
@@ -48,7 +48,7 @@ export default function Home({ externalPostData }) {
                     </li>
                     <li>
                       <span>
-                        <a href="https://www.youtube.com/channel/UCy-rQYzAcIyrEw0Gpck31rA" target='_blank' className="link-color-coffee">Youtube</a>
+                      <a href="https://www.youtube.com/channel/UCy-rQYzAcIyrEw0Gpck31rA" className="link-color-coffee">Youtube</a>
                       </span>
                     </li>
                   </ul>
@@ -76,9 +76,7 @@ export default function Home({ externalPostData }) {
               </div>
               <footer className={styles.footer}>
         <Link
-          href="/"
-          rel="noopener noreferrer"
-        >
+          href="/" passHref>
           <div>
           Powered by Antonius
             <div className='text-center'>
