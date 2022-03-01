@@ -120,7 +120,7 @@ export default function Post({postData}){
 }
 
 async function getAllPostIds(){
-    const apiUrl = "http://localhost:3001/posts";
+    const apiUrl = "https://educacit.pandalas.id/posts";
     const response = await fetch(apiUrl);
     const allPosts = await response.json();
     const allPostIds = allPosts.map((post) => {
@@ -139,7 +139,7 @@ export async function getStaticPaths() {
   }
   
   async function getPostData(id) {
-    const apiURL = `http://localhost:3001/posts?slug=${id}`;
+    const apiURL = `https://educacit.pandalas.id/posts?slug=${id}`;
   
     const response = await fetch(apiURL);
   
