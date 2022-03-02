@@ -9,7 +9,7 @@ export default function Post({postData}){
           <Head>
             <title>{postData.title} - Education of IT</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <meta charset="utf-8"/>
+            <meta charSet="utf-8"/>
             <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
             <meta name="keywords" content="online course, kopi koding, kursus programming, bikin web, belajar programming, cerita developer"/>
             <meta name="description" content={postData.description} />
@@ -120,7 +120,7 @@ export default function Post({postData}){
 }
 
 async function getAllPostIds(){
-    const apiUrl = "https://educacit.pandalas.id/posts";
+    const apiUrl = "https://api-educacit.pandalas.id/posts";
     const response = await fetch(apiUrl);
     const allPosts = await response.json();
     const allPostIds = allPosts.map((post) => {
@@ -139,7 +139,7 @@ export async function getStaticPaths() {
   }
   
   async function getPostData(id) {
-    const apiURL = `https://educacit.pandalas.id/posts?slug=${id}`;
+    const apiURL = `https://api-educacit.pandalas.id/posts?slug=${id}`;
   
     const response = await fetch(apiURL);
   

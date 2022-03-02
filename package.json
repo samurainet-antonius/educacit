@@ -1,6 +1,7 @@
 {
   "name": "educacit",
   "version": "0.1.0",
+  "homepage": "https://educacit.pandalas.id/",
   "private": true,
   "scripts": {
     "dev": "next dev",

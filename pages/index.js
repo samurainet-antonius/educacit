@@ -94,7 +94,7 @@ export default function Home({ externalPostData }) {
 
 
 export async function getStaticProps(){
-  const apiURL = "https://educacit.pandalas.id/posts";
+  const apiURL = "https://api-educacit.pandalas.id/posts";
   const response = await fetch(apiURL);
   const data = await response.json();
   return {
